@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wonderful Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    background: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 30px 20px;
+    min-height: auto;
+}
+
+/* HOME */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* IMAGE LEFT */
+.home img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* TEXT RIGHT */
+.text {
+    max-width: 500px;
+}
+
+/* CONTENT */
+.content {
+    text-align: center;
+    border-left: 5px solid blue;
+}
+
+.content h1 {
+    background: blue;
+    color: white;
+    padding: 15px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+/* CONTACT INFO */
+.contact-info {
+    margin-top: 20px;
+    line-height: 2;
+}
+
+/* FOOTER */
+footer {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Wonderful</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <img src="MYXJ_20241020212700_save_(1).jpg" alt="My Image">
+
+    <div class="text">
+        <h1>
+            Im Wonderful Makuyana an upcomming programmer at Uncommon and my aim is to grow bigger
+        </h1>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="content">
+    <h1>About Me</h1>
+    <p>
+        I am Wonderful Makuyana, an upcoming programmer at Uncommon. 
+        I am learning web development using HTML, CSS, JavaScript, Python and Django.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="content">
+    <h1>Contact Me</h1>
+
+    <div class="contact-info">
+        <p><strong>Phone:</strong> 0774193173</p>
+        <p><strong>Email:</strong> malcommakuyana@gmail.com</p>
+        <p><strong>LinkedIn:</strong> Malcom Makuyana</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Wonderful Makuyana</p>
+</footer>
+
+</body>
+</html>
